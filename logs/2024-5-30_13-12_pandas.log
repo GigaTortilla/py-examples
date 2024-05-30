@@ -1,17 +1,17 @@
-2024-05-30 13:07:32,714 - INFO::pandas_example::main at line 9 - Logging started.
-2024-05-30 13:07:32,714 - INFO::pandas_example::main at line 10 - NumPy version: 1.26.4
-2024-05-30 13:07:32,714 - INFO::pandas_example::main at line 11 - Pandas version: 2.2.2
-2024-05-30 13:07:32,718 - DEBUG::pandas_example::main at line 17 - Dataframe from two Series:           0         1
-0 -1.022124  1.070738
-1  0.417941  0.600223
-2  0.549942  1.194770
-3  0.155582  1.090117
-4 -0.357079 -1.003073
-2024-05-30 13:07:32,722 - DEBUG::pandas_example::main at line 23 - Dataframe from dictionary:       Name  Alter  Lieblingszahl
-0    Bernd     54      -0.433458
-1    Silke     36       1.796716
-2  Claudia     23       0.505001
-2024-05-30 13:07:32,741 - DEBUG::pandas_example::main at line 27 - Dataframe from .csv file:    place  min  max        type public      date      fee resp
+2024-05-30 13:12:53,775 - INFO::pandas_example::main at line 9 - Logging started.
+2024-05-30 13:12:53,776 - INFO::pandas_example::main at line 10 - NumPy version: 1.26.4
+2024-05-30 13:12:53,776 - INFO::pandas_example::main at line 11 - Pandas version: 2.2.2
+2024-05-30 13:12:53,780 - DEBUG::pandas_example::main at line 17 - Dataframe from two Series:           0         1
+0 -0.632519 -1.591138
+1 -1.431636 -0.015396
+2  0.617023 -1.852217
+3  0.593451 -0.637702
+4  0.247662  1.300858
+2024-05-30 13:12:53,782 - DEBUG::pandas_example::main at line 23 - Dataframe from dictionary:       Name  Alter  Lieblingszahl
+0    Bernd     54      -1.505178
+1    Silke     36       0.087246
+2  Claudia     23       0.340950
+2024-05-30 13:12:53,798 - DEBUG::pandas_example::main at line 27 - Dataframe from .csv file:    place  min  max        type public      date      fee resp
 0    NaN  2.1  4.8        trad   True       NaN  £200.45   CT
 1    NaN  NaN  3.2         NaN  False  1/1/2017  £150.38   AS
 2   25.0  2.3  3.3     forrest   True  2/1/2017   £85.07   CT
@@ -20,8 +20,8 @@
 5   12.0  NaN  3.3     waldorf  False  2/1/2017  £350.96   AS
 6   18.0  2.5  NaN     forrest    NaN  4/1/2017      NaN   CT
 7   15.0  2.3  4.3  montessori   True  2/1/2017   £85.07   CT
-2024-05-30 13:07:32,748 - DEBUG::pandas_example::main at line 28 - Dataframe information: None
-2024-05-30 13:07:32,754 - DEBUG::pandas_example::main at line 29 - Descriptive statistics:            place       min       max
+2024-05-30 13:12:53,804 - DEBUG::pandas_example::main at line 28 - Dataframe information: None
+2024-05-30 13:12:53,810 - DEBUG::pandas_example::main at line 29 - Descriptive statistics:            place       min       max
 count   5.000000  6.000000  6.000000
 mean   21.000000  2.283333  3.950000
 std     9.192388  0.160208  0.771362
@@ -30,11 +30,11 @@ min    12.000000  2.100000  3.200000
 50%    18.000000  2.300000  3.800000
 75%    25.000000  2.375000  4.675000
 max    35.000000  2.500000  4.800000
-2024-05-30 13:07:32,754 - DEBUG::pandas_example::main at line 30 - Elements per col for "resp": resp
+2024-05-30 13:12:53,811 - DEBUG::pandas_example::main at line 30 - Elements per col for "resp": resp
 CT    6
 AS    2
 Name: count, dtype: int64
-2024-05-30 13:07:32,755 - DEBUG::pandas_example::main at line 31 - Number of missing values: place     3
+2024-05-30 13:12:53,811 - DEBUG::pandas_example::main at line 31 - Number of missing values: place     3
 min       2
 max       2
 type      1
@@ -43,10 +43,10 @@ date      2
 fee       2
 resp      0
 dtype: int64
-2024-05-30 13:07:32,755 - DEBUG::pandas_example::main at line 32 - Access dataframe areas: [['forrest' True '2/1/2017']
+2024-05-30 13:12:53,812 - DEBUG::pandas_example::main at line 32 - Access dataframe areas: [['forrest' True '2/1/2017']
  ['trad' nan '3/1/2017']
  ['trad' True nan]]
-2024-05-30 13:07:32,756 - DEBUG::pandas_example::main at line 35 - Duplicates in the dataframe: 0    False
+2024-05-30 13:12:53,813 - DEBUG::pandas_example::main at line 35 - Duplicates in the dataframe: 0    False
 1    False
 2    False
 3    False
@@ -55,7 +55,7 @@ dtype: int64
 6    False
 7    False
 dtype: bool
-2024-05-30 13:07:32,768 - DEBUG::pandas_example::main at line 47 - New dataframe with missing values filled in:    place       min   max        type  public      date      fee resp
+2024-05-30 13:12:53,822 - DEBUG::pandas_example::main at line 47 - New dataframe with missing values filled in:    place       min   max        type  public      date      fee resp
 0   18.0  2.100000  4.80        trad    True  1/1/2017  £200.45   CT
 1   18.0  2.283333  3.20        trad   False  1/1/2017  £150.38   AS
 2   25.0  2.300000  3.30     forrest    True  2/1/2017   £85.07   CT
@@ -64,7 +64,7 @@ dtype: bool
 5   12.0  2.283333  3.30     waldorf   False  2/1/2017  £350.96   AS
 6   18.0  2.500000  3.95     forrest    True  4/1/2017  £250.00   CT
 7   15.0  2.300000  4.30  montessori    True  2/1/2017   £85.07   CT
-2024-05-30 13:07:32,775 - INFO::pandas_example::main at line 58 - Preprocessed data:    place       min   max        type  public      date     fee  resp
+2024-05-30 13:12:53,828 - INFO::pandas_example::main at line 58 - Preprocessed data:    place       min   max        type  public      date     fee  resp
 0   18.0  2.100000  4.80        trad    True  1/1/2017  200.45  City
 1   18.0  2.283333  3.20        trad   False  1/1/2017  150.38  Ass.
 2   25.0  2.300000  3.30     forrest    True  2/1/2017   85.07  City
@@ -73,4 +73,4 @@ dtype: bool
 5   12.0  2.283333  3.30     waldorf   False  2/1/2017  350.96  Ass.
 6   18.0  2.500000  3.95     forrest    True  4/1/2017  250.00  City
 7   15.0  2.300000  4.30  montessori    True  2/1/2017   85.07  City
-2024-05-30 13:07:32,797 - INFO::pandas_example::main at line 61 - Saved to data/preprocessed_data.csv
+2024-05-30 13:12:53,832 - INFO::pandas_example::main at line 61 - Saved to data/preprocessed_data.csv
