@@ -1,0 +1,28 @@
+2024-05-30 09:45:28,253 - INFO::numpy_examples::main at line 8 - Logging started. NumPy version: 1.26.4
+2024-05-30 09:45:28,253 - DEBUG::numpy_examples::main at line 12 - List object converted to NumPy-Array: [0 1 2 3 4 5]
+2024-05-30 09:45:28,253 - DEBUG::numpy_examples::main at line 15 - The variable my_array is a NumPy-Array.
+2024-05-30 09:45:28,254 - DEBUG::numpy_examples::main at line 19 - 1D-Array: [0 1 2 3 4 5]
+2D-Array: [[ 1  2]
+ [ 3  4]
+ [ 5  6]
+ [ 7  8]
+ [ 9 10]]
+2024-05-30 09:45:28,254 - DEBUG::numpy_examples::main at line 23 - Datentyp: int32
+2024-05-30 09:45:28,254 - DEBUG::numpy_examples::main at line 24 - Dimension: 2
+2024-05-30 09:45:28,254 - DEBUG::numpy_examples::main at line 25 - Anzahl der Elemente: 10
+2024-05-30 09:45:28,254 - DEBUG::numpy_examples::main at line 26 - Bytes pro Element: 4
+2024-05-30 09:45:28,254 - DEBUG::numpy_examples::main at line 27 - Ort im Arbeitsspeicher: <memory at 0x000002932AEA3780>
+2024-05-30 09:45:28,254 - DEBUG::numpy_examples::main at line 33 - Array Konsistenz hergestellt... [['1' '2' '3']
+ ['4' '5' '6']
+ ['7' '8' 'neun']]
+2024-05-30 09:45:28,254 - DEBUG::numpy_examples::main at line 37 - Elementweise Addition: [ 2 13  9  4]
+2024-05-30 09:45:28,254 - DEBUG::numpy_examples::main at line 38 - Elementweise Subtraktion: [0 5 5 0]
+2024-05-30 09:45:28,254 - DEBUG::numpy_examples::main at line 39 - Elementweise Multiplikation: [ 1 36 14  4]
+2024-05-30 09:45:28,254 - DEBUG::numpy_examples::main at line 40 - Elementweise Division: [1.   2.25 3.5  1.  ]
+2024-05-30 09:45:28,254 - DEBUG::numpy_examples::main at line 43 - Median: 4.5
+2024-05-30 09:45:28,254 - DEBUG::numpy_examples::main at line 44 - Standardabweichung: 3.344772040064913
+2024-05-30 09:45:28,254 - DEBUG::numpy_examples::main at line 45 - Varianz: 11.1875
+2024-05-30 09:45:28,254 - DEBUG::numpy_examples::main at line 46 - Maximaler Wert: 9
+2024-05-30 09:45:28,254 - DEBUG::numpy_examples::main at line 47 - Minimaler Wert: 1
+2024-05-30 09:45:28,255 - DEBUG::numpy_examples::main at line 48 - Summe aller Werte größer als das arithmetische Mittel: 2
+2024-05-30 09:45:28,255 - DEBUG::numpy_examples::main at line 52 - Zufallsgeneriertes Array: [ 0.42247772 -0.39016969 -0.11842022 -0.00181298 -0.68453477]

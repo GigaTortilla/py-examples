@@ -5,9 +5,10 @@ import time
 def init_log(logname: str = "example", \
              loglevel: int = logging.DEBUG) -> None:
     start_time = time.localtime()
-    logging.basicConfig(filename="logs/" + "-".join(start_time[0:3]) + "_" + \
-                        ":".join(start_time[3:5]) + "_" + logname + ".log", \
-                        filemode="w", level=loglevel, \
+    logging.basicConfig(filename="logs/" + \
+                        "-".join([str(i) for i in start_time[0:3]]) + "_" + \
+                        "-".join([str(i) for i in start_time[3:5]]) + "_" + \
+                        logname + ".log", filemode="w", level=loglevel, \
                         format="%(asctime)s - %(levelname)s::%(module)s::" + \
                         "%(funcName)s at line %(lineno)d - %(message)s")
 
