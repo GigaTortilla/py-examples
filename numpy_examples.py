@@ -1,9 +1,10 @@
 import numpy as np
-from example_logs import init_log_dbg
+import logging
+from example_logs import init_log
 
 
 def main(argv=None) -> int:
-    init_log_dbg()
+    init_log()
     pass
 
 
