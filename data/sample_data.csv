@@ -1,0 +1,9 @@
+place,min,max,type,public,date,fee,resp
+NaN,2.1,4.8,trad,True,NaN,£200.45,CT
+NaN,NaN,3.2,NaN,False,1/1/2017,£150.38,AS
+25.0,2.3,3.3,forrest,True,2/1/2017,£85.07,CT
+35.0,2.4,NaN,trad,NaN,3/1/2017,NaN,CT
+NaN,2.1,4.8,trad,True,NaN,£200.45,CT
+12.0,NaN,3.3,waldorf,False,2/1/2017,£350.96,AS
+18.0,2.5,NaN,forrest,NaN,4/1/2017,NaN,CT
+15.0,2.3,4.3,montessori,True,2/1/2017,£85.07,CT
