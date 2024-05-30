@@ -14,4 +14,5 @@ if __name__ == '__main__':
         print(ex.__var3)
     except:
         print(sys.exc_info())
-    # Erzeugt einen Fehler, da externer Zugriff auf geschützte Attribute nicht zulässig ist
+    # Erzeugt einen Fehler, da externer Zugriff auf 
+    # geschützte Attribute nicht zulässig ist

@@ -2,11 +2,14 @@ import logging
 import time
 
 
-def init_log_dbg() -> None:
+def init_log(logname: str = "example", \
+             loglevel: int = logging.DEBUG) -> None:
     start_time = time.localtime()
-    logging.basicConfig(filename="logs/"+"-".join(start_time[0:3])+"_"+":".join(start_time[3:5])+".log", \
-                        filemode="w", level=logging.DEBUG, \
-                        format="%(asctime)s - %(levelname)s::%(module)s::%(funcName)s at line %(lineno)d - %(message)s")
+    logging.basicConfig(filename="logs/" + "-".join(start_time[0:3]) + "_" + \
+                        ":".join(start_time[3:5]) + "_" + logname + ".log", \
+                        filemode="w", level=loglevel, \
+                        format="%(asctime)s - %(levelname)s::%(module)s::" + \
+                        "%(funcName)s at line %(lineno)d - %(message)s")
 
 
 def main(argv=None) -> int:
