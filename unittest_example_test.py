@@ -1,6 +1,7 @@
 import unittest
 import unittest_example as ute
 
+
 class UnitTestMathOperations(unittest.TestCase):
     def test_math_addition(self):
         '''
@@ -11,7 +12,6 @@ class UnitTestMathOperations(unittest.TestCase):
         result = ute.math_addition(2, 2)
         self.assertEqual(result, 4, "Die Addtion sollte 4 ergeben")
 
-    
     def test_math_division(self):
         '''
         Mathematische Division testen

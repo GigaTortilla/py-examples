@@ -37,7 +37,7 @@ def main(argv=None) -> int:
     cubiic_interpolation = interp1d(n, y_experiment, kind="cubic")
     y_cubic_interpolation = cubiic_interpolation(x)
     # Vergleichsplot erzeugen
-    fig, ax = plt.subplots(figsize=(10,4))
+    fig, ax = plt.subplots(figsize=(10, 4))
     ax.plot(n, y_experiment, "bs", label="experiment data")
     ax.plot(x, y_actual, "k", lw=2, label="actual function")
     ax.plot(x, y_linear_interpolation, "r", label="linear interpolation")

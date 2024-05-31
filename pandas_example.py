@@ -17,8 +17,8 @@ def main(argv=None) -> int:
     logging.debug("Dataframe from two Series: " + str(my_df_1))
 
     # Erzeugen eines Dataframes aus einem Dictionary
-    my_dic = {"Name":['Bernd', 'Silke', 'Claudia'], \
-            "Alter":[54, 36, 23], "Lieblingszahl":np.random.randn(3)}
+    my_dic = {"Name": ['Bernd', 'Silke', 'Claudia'],
+              "Alter": [54, 36, 23], "Lieblingszahl": np.random.randn(3)}
     my_df_2 = pd.DataFrame(my_dic)
     logging.debug("Dataframe from dictionary: " + str(my_df_2))
 
@@ -36,15 +36,15 @@ def main(argv=None) -> int:
     dat_csv.drop_duplicates()
 
     # Fehlende Werte können ersetzt werden
-    fill_values = {'place': np.nanmedian(dat_csv['place']), \
-                   'min': np.mean(dat_csv['min']), \
-                   'max': np.mean(dat_csv['max']), \
-                   'type': 'trad', \
-                   'public': True, \
+    fill_values = {'place': np.nanmedian(dat_csv['place']),
+                   'min': np.mean(dat_csv['min']),
+                   'max': np.mean(dat_csv['max']),
+                   'type': 'trad',
+                   'public': True,
                    'date': '1/1/2017',
                    'fee': '£250.00'}
     dat_csv.fillna(fill_values, inplace=True)
-    logging.debug("New dataframe with missing values filled in: " \
+    logging.debug("New dataframe with missing values filled in: "
                   + str(dat_csv))
     
     # Pfundzeichen in 'fee'-Spalte entfernen 
