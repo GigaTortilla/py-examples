@@ -1,0 +1,76 @@
+2024-05-31 19:24:38,819 - INFO::pandas_example::main at line 9 - Logging started.
+2024-05-31 19:24:38,819 - INFO::pandas_example::main at line 10 - NumPy version: 1.26.4
+2024-05-31 19:24:38,819 - INFO::pandas_example::main at line 11 - Pandas version: 2.2.2
+2024-05-31 19:24:38,822 - DEBUG::pandas_example::main at line 17 - Dataframe from two Series:           0         1
+0 -0.792969  0.778816
+1 -0.379698  0.399281
+2 -0.356319  1.244999
+3  0.236433 -0.419799
+4  1.336148  0.482948
+2024-05-31 19:24:38,824 - DEBUG::pandas_example::main at line 23 - Dataframe from dictionary:       Name  Alter  Lieblingszahl
+0    Bernd     54      -0.396064
+1    Silke     36       0.926227
+2  Claudia     23       1.790224
+2024-05-31 19:24:38,829 - DEBUG::pandas_example::main at line 27 - Dataframe from .csv file:    place  min  max        type public      date      fee resp
+0    NaN  2.1  4.8        trad   True       NaN  £200.45   CT
+1    NaN  NaN  3.2         NaN  False  1/1/2017  £150.38   AS
+2   25.0  2.3  3.3     forrest   True  2/1/2017   £85.07   CT
+3   35.0  2.4  NaN        trad    NaN  3/1/2017      NaN   CT
+4    NaN  2.1  4.8        trad   True       NaN  £200.45   CT
+5   12.0  NaN  3.3     waldorf  False  2/1/2017  £350.96   AS
+6   18.0  2.5  NaN     forrest    NaN  4/1/2017      NaN   CT
+7   15.0  2.3  4.3  montessori   True  2/1/2017   £85.07   CT
+2024-05-31 19:24:38,831 - DEBUG::pandas_example::main at line 28 - Dataframe information: None
+2024-05-31 19:24:38,835 - DEBUG::pandas_example::main at line 29 - Descriptive statistics:            place       min       max
+count   5.000000  6.000000  6.000000
+mean   21.000000  2.283333  3.950000
+std     9.192388  0.160208  0.771362
+min    12.000000  2.100000  3.200000
+25%    15.000000  2.150000  3.300000
+50%    18.000000  2.300000  3.800000
+75%    25.000000  2.375000  4.675000
+max    35.000000  2.500000  4.800000
+2024-05-31 19:24:38,836 - DEBUG::pandas_example::main at line 30 - Elements per col for "resp": resp
+CT    6
+AS    2
+Name: count, dtype: int64
+2024-05-31 19:24:38,836 - DEBUG::pandas_example::main at line 31 - Number of missing values: place     3
+min       2
+max       2
+type      1
+public    2
+date      2
+fee       2
+resp      0
+dtype: int64
+2024-05-31 19:24:38,836 - DEBUG::pandas_example::main at line 32 - Access dataframe areas: [['forrest' True '2/1/2017']
+ ['trad' nan '3/1/2017']
+ ['trad' True nan]]
+2024-05-31 19:24:38,837 - DEBUG::pandas_example::main at line 35 - Duplicates in the dataframe: 0    False
+1    False
+2    False
+3    False
+4     True
+5    False
+6    False
+7    False
+dtype: bool
+2024-05-31 19:24:38,843 - DEBUG::pandas_example::main at line 47 - New dataframe with missing values filled in:    place       min   max        type  public      date      fee resp
+0   18.0  2.100000  4.80        trad    True  1/1/2017  £200.45   CT
+1   18.0  2.283333  3.20        trad   False  1/1/2017  £150.38   AS
+2   25.0  2.300000  3.30     forrest    True  2/1/2017   £85.07   CT
+3   35.0  2.400000  3.95        trad    True  3/1/2017  £250.00   CT
+4   18.0  2.100000  4.80        trad    True  1/1/2017  £200.45   CT
+5   12.0  2.283333  3.30     waldorf   False  2/1/2017  £350.96   AS
+6   18.0  2.500000  3.95     forrest    True  4/1/2017  £250.00   CT
+7   15.0  2.300000  4.30  montessori    True  2/1/2017   £85.07   CT
+2024-05-31 19:24:38,848 - INFO::pandas_example::main at line 58 - Preprocessed data:    place       min   max        type  public      date     fee  resp
+0   18.0  2.100000  4.80        trad    True  1/1/2017  200.45  City
+1   18.0  2.283333  3.20        trad   False  1/1/2017  150.38  Ass.
+2   25.0  2.300000  3.30     forrest    True  2/1/2017   85.07  City
+3   35.0  2.400000  3.95        trad    True  3/1/2017  250.00  City
+4   18.0  2.100000  4.80        trad    True  1/1/2017  200.45  City
+5   12.0  2.283333  3.30     waldorf   False  2/1/2017  350.96  Ass.
+6   18.0  2.500000  3.95     forrest    True  4/1/2017  250.00  City
+7   15.0  2.300000  4.30  montessori    True  2/1/2017   85.07  City
+2024-05-31 19:24:38,848 - INFO::pandas_example::main at line 61 - Saved to data/preprocessed_data.csv

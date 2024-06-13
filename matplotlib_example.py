@@ -42,7 +42,7 @@ def main(argv=None):
     x = mu + sigma * np.random.randn(10000)
 
     fig, ax = plt.subplots(figsize=(6, 4))
-    ax.hist(x, bins=50, density=True, facecolor='r', alpha=0.75, \
+    ax.hist(x, bins=50, density=True, facecolor='r', alpha=0.75,
             label='Histogram Plot Example')
     # $math_text$ formatiert Text zu mathematischen Ausdrücken
     ax.text(45, 0.028, r'$\mu=100,\ \sigma=15$')

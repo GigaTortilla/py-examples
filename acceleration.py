@@ -1,7 +1,7 @@
 from numba import jit
-import time
 from time import process_time
 import numpy as np
+
 
 # jit-Dekorator gibt an, dass Code Just-in-Time kompiliert wird
 # Code läuft damit in nur 3 % der ursprünglich nötigen Zeitdauer

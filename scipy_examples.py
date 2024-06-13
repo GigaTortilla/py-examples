@@ -1,6 +1,6 @@
 import numpy as np
-from scipy.integrate import quad, dblquad, tplquad
-from scipy.special import jn, yn, jn_zeros, yn_zeros
+from scipy.integrate import quad
+from scipy.special import jn
 from scipy.interpolate import interp1d
 import matplotlib.pyplot as plt
 
@@ -13,7 +13,7 @@ def main(argv=None) -> int:
     fig, ax = plt.subplots()
     for alpha in range(4):
         ax.plot(x, jn(alpha, x), label=r"J$_{}(x)$".format(alpha))
-        ax.legend();
+        ax.legend()
         plt.xlabel("x")
         plt.ylabel("y")
         plt.title("Bessel Functions")
@@ -22,7 +22,7 @@ def main(argv=None) -> int:
     # Integration
     a = 0
     b = np.pi / 2.0
-    integral_value, absolute_error = quad(np.cos, a, b)
+    integral_value, absolute_error = quad(func=np.cos, a=a, b=b)
     print("Integralwert: " + str(integral_value))
     print("Absoluter Fehler: " + str(absolute_error))
 
@@ -37,12 +37,12 @@ def main(argv=None) -> int:
     cubiic_interpolation = interp1d(n, y_experiment, kind="cubic")
     y_cubic_interpolation = cubiic_interpolation(x)
     # Vergleichsplot erzeugen
-    fig, ax = plt.subplots(figsize=(10,4))
+    fig, ax = plt.subplots(figsize=(10, 4))
     ax.plot(n, y_experiment, "bs", label="experiment data")
     ax.plot(x, y_actual, "k", lw=2, label="actual function")
     ax.plot(x, y_linear_interpolation, "r", label="linear interpolation")
     ax.plot(x, y_cubic_interpolation, "g", label="cubic interpolation")
-    ax.legend(loc=3);
+    ax.legend(loc=3)
     plt.xlabel("x")
     plt.ylabel("y")
     plt.title("Functions Interpolation Example")
