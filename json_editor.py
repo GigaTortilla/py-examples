@@ -6,7 +6,7 @@ def remove_conditions(file_path: str) -> None:
     with open(file_path, 'r+') as f:
         templates = json.load(f)
         if 'mappings' not in templates:
-            return
+            raise KeyError('The specified file does not contain mappings.')
         for i in range(len(templates['mappings'])):
             if 'conditions' in templates['mappings'][i]:
                 templates['mappings'][i].pop('conditions')
